@@ -15,16 +15,21 @@ $$
 
 ## 16.3
 
+$$
+\begin{aligned}
+&Q_{n}(k)=\frac{1}{n}\left((n-1) \times Q_{n-1}(k)+v_{n}\right)\\
+&=Q_{n-1}(k)+\frac{1}{n}\left(v_{n}-Q_{n-1}(k)\right)
+\end{aligned}
+$$
+
+
+
 [推导]：参见 16.2
 
 ## 16.4
 
 $$
 P(k)=\frac{e^{\frac{Q(k)}{\tau }}}{\sum_{i=1}^{K}e^{\frac{Q(i)}{\tau}}}
-$$
-
-$$
-\tau越小则平均奖赏高的摇臂被选取的概率越高
 $$
 
 [解析]：
@@ -155,7 +160,7 @@ $$
 $$
 r_{t+1}=R_{x\rightarrow x{}'}^{a}+\gamma Q_{t}^{\pi}(x{}',a{}')
 $$
-而由γ折扣累积奖赏可估计得到。
+而由$\gamma$折扣累积奖赏可估计得到。
 
 
 
